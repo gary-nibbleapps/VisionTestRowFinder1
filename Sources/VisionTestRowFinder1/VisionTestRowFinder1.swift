@@ -14,7 +14,7 @@ public struct VisionTestRowFinder1: RowFinder {
     public init() {}
 
 
-    func rows(from results: [Item]) -> [[Item]] {
+    public func rows(from results: [Item]) -> [[Item]] {
         let pairsAndVectors = makePairsAndVectors(results: results)
         let classifier = Classifier(vectors: pairsAndVectors.map({ $0.v }))
 
