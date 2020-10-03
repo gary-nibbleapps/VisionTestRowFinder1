@@ -8,10 +8,10 @@
 import Foundation
 import CoreGraphics
 
-protocol Item {
+public protocol Item {
     var bottomY: CGFloat { get }
 }
 
-protocol RowFinder {
+public protocol RowFinder {
     func rows(from results: [Item]) -> [[Item]]
 }

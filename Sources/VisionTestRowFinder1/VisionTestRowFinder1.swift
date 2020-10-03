@@ -11,6 +11,9 @@ public struct VisionTestRowFinder1: RowFinder {
     private typealias PairAndVector = (r1: Item, r2: Item, v: Vector)
 
 
+    public init() {}
+
+
     func rows(from results: [Item]) -> [[Item]] {
         let pairsAndVectors = makePairsAndVectors(results: results)
         let classifier = Classifier(vectors: pairsAndVectors.map({ $0.v }))
