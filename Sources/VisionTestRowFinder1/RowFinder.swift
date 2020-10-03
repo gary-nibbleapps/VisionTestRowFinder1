@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 protocol Item {
     var bottomY: CGFloat { get }
